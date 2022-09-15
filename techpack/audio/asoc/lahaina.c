@@ -6489,7 +6489,7 @@ static struct snd_soc_dai_link msm_common_misc_fe_dai_links[] = {
 		.id = MSM_FRONTEND_DAI_MULTIMEDIA10,
 		SND_SOC_DAILINK_REG(multimedia10),
 	},
-#if defined(CONFIG_TARGET_PRODUCT_ODIN) || defined(CONFIG_TARGET_PRODUCT_LISA)
+#if defined(CONFIG_TARGET_PRODUCT_ODIN) || defined(CONFIG_TARGET_PRODUCT_LISA) || defined(CONFIG_TARGET_PRODUCT_VILI)
 	{/* hw:x,44 */
 		.name = "Secondary MI2S_TX Hostless",
 		.stream_name = "Secondary MI2S_TX Hostless Capture",
