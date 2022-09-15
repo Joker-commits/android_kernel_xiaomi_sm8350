@@ -86,8 +86,10 @@ const char *product_name_get(void)
 		case HARDWARE_PROJECT_K1:  return "star";
 		case HARDWARE_PROJECT_K8:  return "odin";
 		case HARDWARE_PROJECT_K2:  return "venus";
+		case HARDWARE_PROJECT_K3S:  return "vili";
 		case HARDWARE_PROJECT_K1A: return "mars";
 		case HARDWARE_PROJECT_K9:  return "renoir";
+		case HARDWARE_PROJECT_K9D:  return "lisa";
 		case HARDWARE_PROJECT_K11:
 			if ( (uint32_t)CountryIndia == get_hw_country_version())
 				return "haydnin";
