@@ -4144,6 +4144,9 @@ static int haptics_parse_dt(struct haptics_chip *chip)
 #ifdef CONFIG_TARGET_PRODUCT_HAYDN
 	config->vmax_mv = 1200;
 #endif
+#ifdef CONFIG_TARGET_PRODUCT_VILI
+	config->vmax_mv = 1300;
+#endif
 
 	config->fifo_empty_thresh = get_fifo_empty_threshold(chip);
 	of_property_read_u32(node, "qcom,fifo-empty-threshold",
