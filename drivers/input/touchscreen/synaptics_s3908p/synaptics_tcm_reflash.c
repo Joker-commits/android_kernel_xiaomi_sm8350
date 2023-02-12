@@ -952,8 +952,8 @@ static int reflash_get_fw_image(void)
 			fw_image_name_manual = FW_IMAGE_NAME_MANUAL_K9B;
 			break;
 		case HARDWARE_PROJECT_K9E:
-			fw_image_name = TS_DEFAULT_FIRMWARE_K9E;
-			fw_image_name_manual = TS_DEFAULT_CFG_BIN_K9E;
+			fw_image_name = FW_IMAGE_NAME_K9E;
+			fw_image_name_manual = FW_IMAGE_NAME_MANUAL_K9E;
 			break;
 		default:
 			// Nothing
