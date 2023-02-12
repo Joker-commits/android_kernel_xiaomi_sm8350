@@ -172,6 +172,7 @@
 	dsi_panel_pwr_supply_l9: dsi_panel_pwr_supply_l9 {
 		#address-cells = <1>;
 		#size-cells = <0>;
+
 		qcom,panel-supply-entry@0 {
 			reg = <0>;
 			qcom,supply-name = "vddio";
@@ -180,7 +181,7 @@
 			qcom,supply-enable-load = <60700>;
 			qcom,supply-disable-load = <80>;
 			qcom,supply-post-on-sleep = <10>;
-			qcom,supply-pre-off-sleep = <2>;
+			qcom,supply-pre-off-sleep = <6>;
 		};
 
 		qcom,panel-supply-entry@1 {
@@ -192,6 +193,7 @@
 			qcom,supply-disable-load = <80>;
 			qcom,supply-post-on-sleep = <10>;
 		};
+
 		qcom,panel-supply-entry@2 {
 			reg = <2>;
 			qcom,supply-name = "vdd";
@@ -200,12 +202,14 @@
 			qcom,supply-enable-load = <100000>;
 			qcom,supply-disable-load = <0>;
 			qcom,supply-post-on-sleep = <10>;
+			qcom,supply-pre-off-sleep = <4>;
 		};
 	};
 
 	dsi_panel_pwr_supply_l9_0b: dsi_panel_pwr_supply_l9_0b {
 		#address-cells = <1>;
 		#size-cells = <0>;
+
 		qcom,panel-supply-entry@0 {
 			reg = <0>;
 			qcom,supply-name = "vddio";
@@ -214,7 +218,7 @@
 			qcom,supply-enable-load = <60700>;
 			qcom,supply-disable-load = <80>;
 			qcom,supply-post-on-sleep = <10>;
-			qcom,supply-pre-off-sleep = <2>;
+			qcom,supply-pre-off-sleep = <6>;
 		};
 
 		qcom,panel-supply-entry@1 {
@@ -226,6 +230,7 @@
 			qcom,supply-disable-load = <80>;
 			qcom,supply-post-on-sleep = <10>;
 		};
+
 		qcom,panel-supply-entry@2 {
 			reg = <2>;
 			qcom,supply-name = "vdd";
@@ -234,6 +239,7 @@
 			qcom,supply-enable-load = <100000>;
 			qcom,supply-disable-load = <0>;
 			qcom,supply-post-on-sleep = <10>;
+			qcom,supply-pre-off-sleep = <4>;
 		};
 	};
 
