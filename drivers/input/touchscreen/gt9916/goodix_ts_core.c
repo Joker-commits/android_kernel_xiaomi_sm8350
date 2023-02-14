@@ -21,7 +21,6 @@
 #include <linux/proc_fs.h>
 #include <linux/seq_file.h>
 #include <linux/uaccess.h>
-#include <linux/hwid.h>
 
 #include <drm/mi_disp_notifier.h>
 #include <linux/backlight.h>
@@ -3528,17 +3527,7 @@ static int __init goodix_ts_core_init(void)
 	gpio_68 = gpio_get_value(TS_ID_DET2);
 	pr_info("gpio_96 = %d\n",gpio_96);
 	pr_info("gpio_68 = %d\n",gpio_68);
-
-	if (get_hw_version_platform() == HARDWARE_PROJECT_L9) {
-		if (gpio_96) {
-			pr_info("TP is goodix");
-		} else {
-			pr_info("TP is focaltech");
-			return 0;
-		}
-	} else {
-		pr_info("TP is goodix");
-	}
+	pr_info("TP is goodix");
 
 	pr_info("Core layer init:%s", GOODIX_DRIVER_VERSION);
 #ifdef CONFIG_TOUCHSCREEN_GOODIX_BRL_SPI
